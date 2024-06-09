@@ -1,0 +1,292 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: rgb(242, 240, 240);
+  overflow-x: hidden;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgb(63, 62, 62);
+  color: white;
+  position: sticky;
+  top: 0;
+  width: 100%;
+  height: 75px;
+}
+
+a:link,
+a:visited {
+  color: white;
+  text-decoration: none;
+  padding: 20px;
+}
+
+a:hover,
+a:active {
+  color: rgb(228, 226, 226);
+  text-decoration: none;
+}
+
+.logo > a {
+  font-size: 23px;
+  font-weight: 800;
+  margin-left: 15px;
+}
+
+.nav-list > ul {
+  list-style: none;
+}
+
+.nav-list > ul > li {
+  display: inline-block;
+  font-size: 16px;
+  margin-right: 10px;
+}
+
+.hero {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: rgba(0, 0, 0, 0.3)
+    url("https://koa.com/blog/images/family-camping-at-sunset.jpg?preset=heroimagecropped");
+  background-blend-mode: darken;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  object-fit: cover;
+  width: 100%;
+  height: 600px;
+  color: white;
+}
+
+.hero > h1 {
+  font-size: 65px;
+  font-weight: 700;
+  margin-top: 80px;
+  padding: 20px;
+}
+
+.hero > p {
+  font-size: 20.5px;
+  text-align: center;
+  width: 60%;
+  line-height: 30px;
+  word-spacing: 2px;
+}
+
+.hero > button {
+  background-color: white;
+  color: black;
+  font-size: 17px;
+  border: none;
+  border-radius: 5px;
+  width: 180px;
+  padding: 15px;
+  margin: 40px;
+}
+
+.hero > button:hover {
+  background-color: rgba(255, 255, 255, 0.3);
+  border: 2px solid white;
+  color: white;
+  cursor: pointer;
+}
+
+.services {
+  text-align: center;
+  width: 100%;
+  height: auto;
+  padding: 20px;
+  line-height: 40px;
+}
+
+.services > h1 {
+  font-size: 30px;
+  font-weight: 800;
+  margin-top: 50px;
+}
+
+.services > p {
+  font-size: 17px;
+}
+
+.services-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.service-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  width: 360px;
+  height: 320px;
+  box-shadow: 0 0 5px -2px rgb(184, 182, 182);
+  padding: 30px;
+  background-color: white;
+  border-radius: 5px;
+  margin: 20px;
+  line-height: 20px;
+}
+
+@media (max-width: 1238px) {
+  .services-container {
+    justify-content: center;
+  }
+}
+
+@media (max-width: 836px) {
+  .service-card {
+    width: 300px;
+    height: auto;
+  }
+}
+
+@media (max-width: 767px) {
+  .service-card {
+    width: 280px;
+    height: auto;
+  }
+}
+
+@media (max-width: 679px) {
+  .service-card {
+    width: 500px;
+    height: auto;
+  }
+}
+
+.service-card > img {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+}
+
+.service-card > h3 {
+  font-size: 18px;
+  font-weight: 800;
+  padding: 5px;
+}
+
+.service-card > p {
+  font-size: 16.5px;
+  width: 90%;
+  line-height: 25px;
+}
+
+.about-us {
+  width: auto;
+  height: auto;
+  margin-top: 50px;
+  padding: 20px;
+  line-height: 50px;
+}
+
+.header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 50px;
+}
+
+.header > h1 {
+  font-size: 30px;
+  font-weight: 800;
+  color: black;
+  text-align: center;
+}
+
+.header > p {
+  font-size: 16.5px;
+  text-align: center;
+  line-height: 25px;
+  margin-bottom: 30px;
+}
+
+.about-us-content {
+  margin: 20px;
+  line-height: 24px;
+}
+
+.about-us-content h3 {
+  margin: 20px auto;
+}
+
+.about-us-content p {
+  font-size: 17px;
+  width: auto;
+  height: auto;
+}
+
+.about-us-content > ul {
+  padding-left: 20px;
+}
+
+.contact-us {
+  width: auto;
+  height: auto;
+  margin-top: 50px;
+  padding: 20px;
+  line-height: 50px;
+}
+
+.contact-us-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 20px;
+  margin-bottom: 60px;
+}
+
+.contact-details-item > span > i {
+  margin-right: 5px;
+}
+
+.input-field {
+  width: 500px;
+  padding: 15px;
+  margin: 10px;
+  border: 1px solid rgb(171, 171, 171);
+  font-size: 16px;
+}
+
+.input-field:focus,
+.textarea-field:focus {
+  outline: none;
+}
+
+.textarea-field {
+  padding: 15px;
+  margin: 10px;
+  margin-bottom: 2px;
+  border: 1px solid rgb(171, 171, 171);
+  font-size: 16px;
+}
+
+.submit-btn {
+  padding: 15px;
+  margin-left: 10px;
+  width: 150px;
+  border: none;
+  border-radius: 5px;
+  background-color: rgb(57, 56, 56);
+  font-size: 16px;
+  color: white;
+}
+
+.submit-btn:hover {
+  cursor: pointer;
+  background-color: rgb(80, 78, 78);
+}
